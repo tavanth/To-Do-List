@@ -4,13 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Simple To-Do List</title>
+  <link rel="icon" type="image/x-icon" href="/images/pink-notebook-rings-vector-flat-illustration-white-background_320290-157-removebg-preview.png">
+  <title>To-Do</title>
 </head>
 <body>
+  <!--Main Container-->
   <div class="container">
     <h1>To-Do List</h1>
-    <input type="text" id="taskInput" placeholder="Add a new task...">
+    <input type="text" class="caret-underscore" id="taskInput" placeholder="Add a new task...">
     <ul id="taskList"></ul>
+    <!--Clear Button-->
+    <button id="clear" class="hover-underline-animation">Clear</button>
+  <!-- Pop-up container -->
+  <div class="popup-container" id="popupContainer">
+    <div class="popup">
+      <p>You sure you wanna delete all tasks?</p>
+      <button id="confirmDelete" class="popup-btn hover-underline-animation">yeaaeaea</button>
+      <button id="cancelDelete" class="popup-btn hover-underline-animation">noooo 3:</button>
+    </div>
+  </div>
+</div>
   </div>
   <script src="script.js"></script>
 </body>
